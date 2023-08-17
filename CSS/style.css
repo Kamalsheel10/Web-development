@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+    font-weight:100;
+}
+
+h2 {
+    text-align: center;
+    font-weight:normal;
+}
+
+#headingThree {
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+    font-weight:bolder;
+}
+
+p {
+    /* color: orange; */
+    color: #ffff00;
+    text-align: left;
+    /* font-size: x-large; */
+    font-size:30px;
+    font-family:system-ui;
+    line-height:normal;
+    text-transform:none;
+}
+
+body {
+    /* background-color: rgb(205,90,240); */
+    background-color: #949D6A;
+}
+
+button {
+    background-color: aquamarine;
+    font-size:15px;
+    font-family:cursive;
+    text-decoration: underline;
+}

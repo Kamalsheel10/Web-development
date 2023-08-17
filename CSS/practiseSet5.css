@@ -1,0 +1,18 @@
+#p1{
+    font-size:20px;
+    color:pink;
+}
+#p2{
+    font-size:20px;
+    color:green;
+}
+
+div{
+    height:100px;
+    width:100px;
+    color:white;
+    background-image:url("nepal.jpg");
+    background-size:cover;
+    position:fixed;
+    right:0px;
+}

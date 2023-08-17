@@ -1,0 +1,42 @@
+ header {
+     height: 60px;
+     border: 2px double white;
+     background-color: black;
+ }
+
+ button {
+     background-color: #f08804;
+ }
+
+ #logo {
+     background-color: #f08804;
+     font-size: 25px;
+     margin-left: 2px;
+ }
+
+ a {
+     margin-left: 200px;
+     text-decoration: none;
+     color: white;
+ }
+
+ input {
+     margin-left: 200px;
+ }
+
+ .contentBox {
+     height: 100px;
+     width: 100px;
+     border:2px solid black;
+     display:inline-block;
+ }
+ #content{
+    height:710px;
+ }
+
+ footer{
+    background-color:black;
+    color:white;
+    text-align:center;
+    font-size:24px;
+ }
