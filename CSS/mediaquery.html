@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQuery</title>
+    <style>
+        .container{
+            background-color: beige;
+            margin:2px;
+            padding:2px;
+            border:2px solid black;
+            display:flex;
+            justify-content: space-around;
+        }
+        .box{
+            height:200px;
+            width:200px;
+            border:2px red solid;
+            margin:2px;
+            margin-bottom:23px;
+            padding:2px;
+            border-radius: 23px ;
+        }
+        @media (min-width:300px) {
+            .container{
+
+                flex-direction:row;
+            }
+        }
+        @media(max-width:500px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

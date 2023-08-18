@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <style>
+        .container {
+            background-color: aliceblue;
+            border: 2px solid green;
+            display: flex;
+            height: 800px;
+            width: 900px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background-color: antiquewhite;
+            height: 400px;
+            border: 2px black solid;
+            margin: 5px;
+            padding: 5px;
+            box-shadow: 14px 15px 43px black;
+            /* box-shadow: inset 5px black; */
+        }
+
+        h2 {
+            --primary-color: red;
+            /* text-shadow:
+            2px 2px var(--primary-color),
+            2px 2px blue,
+            2px 2px green; */
+            text-shadow:
+                /* Adding multiple shadows for the text */
+                1px 1px 2px black,
+                0 0 1em blue,
+                0 0 0.2em blue;
+        }
+
+        img {
+            height: 200px;
+            width: 200px;
+            /* box-shadow: 30px 30px 30px  black; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="nepal.jpg" />
+            <h2>Welcome to Nepal</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, illum nostrum assumenda cum deserunt
+                dolore voluptatem? Tenetur quia quas odio rerum ipsam voluptatum rem a quisquam doloremque voluptates
+                nihil ratione maiores nam quos corrupti possimus voluptatibus quaerat error, labore, molestias saepe
+                facere natus soluta fuga? Corrupti quam saepe aliquid soluta illum ipsa aliquam iusto itaque quaerat
+                recusandae eum sunt cumque totam ipsam minima natus voluptates error, ea quidem optio unde inventore.
+                Minus eos voluptate aliquid eum. Ipsam dolorem accusantium sunt vitae totam, consequatur nemo? Eos quis
+                quaerat quisquam, repellat libero quos repudiandae error commodi expedita distinctio nostrum ut
+                voluptatem perspiciatis!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
