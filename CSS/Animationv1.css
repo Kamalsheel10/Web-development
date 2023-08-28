@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%
+}
+#box{
+    height:300px;
+    width: 300px;
+    background-color: green;
+    position: absolute;
+    animation-name: haki;
+    animation-duration: 2s;
+    /* animation-iteration-count: infinite; */
+    animation-timing-function: cubic-bezier(0,1.01,.14,-0.93);
+    animation-fill-mode:forwards;
+}
+h1{
+    font-size: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 10;
+    position: relative;
+    /* -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color:transparent; */
+}
+
+h1:hover:after{
+    content:"";
+    background-color: black;
+    width:100%;
+    top:85%;
+    height:10px;
+    position: absolute;
+    left:0;
+    animation-name: lineanimation;
+    animation-duration: 3s;
+    animation-iteration-count: 5;
+}
+
+@keyframes lineanimation {
+    0%{
+        width:0;
+        left:0;
+    }
+    50%{
+        width:100%;
+        left:40%;
+    }
+    100%{
+        width:0%;
+        left:0;
+    }
+    
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Basic code for animation */
+@keyframes anime{
+    from{
+        left:0;
+        top:0;
+        background-color: lightgreen;
+    }
+    to{
+        left: 70%;
+        top:55%;
+        background-color: salmon;
+    }
+}
+
+/* Not so basic code for animation */
+@keyframes haki{
+    0%{
+        left:0;
+        top:0;
+        background-color: pink;;
+        rotate:0deg;
+    }
+    50%{
+        left:75%;
+        background-color: blue;
+        top:0;
+        rotate:360deg;
+    }
+    100%{
+        left:75%;
+        top:80%;
+        background-color: salmon;
+    }
+}

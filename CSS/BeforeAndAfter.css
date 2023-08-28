@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body,html{
+    height:100%;
+    width:100%;
+}
+#box{
+    border:black solid 3px;
+    height: 300px;
+    width:300px;
+    margin-top:15px;
+    font-size: 30px;
+    background-color: salmon;
+}
+#box::before{
+    content:"💥";
+}
+#box::after{
+    content:"🔥";
+}
+button{
+    padding:8px 20px;
+    font-size: 20px;
+    border:none;
+    background-color: blue;
+    color:#fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+button::before{
+    content:"";
+    position: absolute;
+    height:100%;
+    width:100%;
+    background-color: blue;
+    top:0;
+    left:0;
+    z-index: -1;
+    transition:0.2s ease;
+}
+button:hover:before{
+    transform: scale(1.4);
+    opacity: 0;
+}
+
+#try{
+    margin:60px;
+    font-size: 70px;
+
+}
+#try::before{
+    content:"Happy Socks";
+    z-index:-1;
+    position: absolute;
+    /* background-color:red; */
+    top:371px;
+    color:transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
