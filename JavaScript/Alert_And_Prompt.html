@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert And Prompt in JS</title>
+</head>
+
+<body>
+    <div class="container">
+        THIS IS A DRIVING EXAM!
+    </div>
+    <script>
+        let a = prompt("Hey, what's your age?");
+        console.log(typeof (a))
+        a = Number.parseInt(a);
+        if (a < 0) {
+            alert("Age invalid!")
+        }
+        else if (a < 9) {
+            alert("You are just a kid! You cannot be thinking of driving right now")
+        }
+        else if (a < 18 && a >= 9) {
+            alert("Yes, you can think of giving driving exam after 18 years!")
+        }
+        else {
+            alert("You can give driving exam! ALL THE BEST FOR YOUR PREPARTION!")
+        }
+    </script>
+</body>
+
+</html>
