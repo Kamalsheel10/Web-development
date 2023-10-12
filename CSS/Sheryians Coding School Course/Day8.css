@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+#car1{
+    height:150px;
+    width:150px;
+    background-color: rgba(255, 0, 0, 0.598);
+    /* position: absolute; */
+}
+#car2{
+    position:absolute;
+    height:300px;
+    width:300px;
+    right:10%;
+    background-color: rgba(0, 0, 255, 0.412);
+}
+#car3{
+    position:relative;
+    /* position: absolute; */
+    height:600px;
+    width:600px;
+    background-color: rgba(0, 128, 0, 0.483);
+}
+
+#box{
+    height:500px;
+    width:500px;
+    background-color: beige;
+    margin:70px;
+    position:relative;
+}
+
+#cube{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    height:100px;
+    width:100px;
+    background-color: rgba(255, 255, 0, 0.322);
+}

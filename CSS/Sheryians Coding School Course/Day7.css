@@ -1,0 +1,107 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#left {
+    height: 100%;
+    width: 50%;
+    /* background-color: red; */
+    background-image: url(https://images.unsplash.com/photo-1696860740767-ba227ae5f9cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+#right {
+    height: 100%;
+    width: 50%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1684164601345-b8c12cd7a232?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+#overlay1 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.43);
+    text-align: center;
+}
+
+#overlay2 {
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff5e;
+    position: relative;
+}
+
+#center1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* text-align: center; */
+    transform:translate(-50%,-50%);
+}
+
+#center1 h1 {
+    color: white;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+#center1 p {
+    font-weight: 100px;
+    color: wheat;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#center1 button {
+    width: 100px;
+    height: 28px;
+    background-color: transparent;
+    color: white;
+}
+
+#center2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#center2 h1 {
+    color: black;
+    font-weight: 100px;
+    letter-spacing: 7px;
+}
+
+#center2 p {
+    font-weight: 100px;
+    color: black;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#center2 button {
+    width: 100px;
+    height: 28px;
+    background-color: transparent;
+    color: black;
+}
