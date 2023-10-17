@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1532255359420-f567d54c7995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3087&q=80);
+    background-size: cover;
+    background-position: 0% 40%;
+}
+
+#nav {
+    padding: 0px 80px;
+    width: 100%;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+
+#nlinks {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#nav i {
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nlinks {
+    display: flex;
+    gap: 30px;
+}
+
+#nlinks a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+}
+
+#nlinks a:nth-child(2)::before {
+    content: "";
+    width: 40%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#nav h5 {
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#centerelem {
+    /* height:100px; */
+    width: 40%;
+    /* background-color: red; */
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%, -50%)
+}
+
+#centerelem h6 {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+
+#centerelem h6 span {
+    font-size: 25px;
+}
+
+#centerelem h1 {
+    font-size: 90px;
+    line-height: 1;
+    font-weight: 400;
+    opacity: 1;
+}
+
+#line {
+    width: 10%;
+    height: 2px;
+    background-color: #fff;
+}
+
+#elem {
+    margin-top: 60px;
+    display: flex;
+    gap: 10px;
+}
+
+#elem #content p {
+    color: #fff;
+    text-align: start;
+    margin-top: -10px;
+    line-height:30px;
+}
+
+#bottomelem {
+    background-color: #fff;
+    width: 70%;
+    height: 170px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.topic h4 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.topic h6 {
+    font-size: 12px;
+    font-weight: 800;
+    opacity: .5;
+}
+#cube{
+    width: 50px;
+    height:50px;
+    background-color: #000;
+    position: absolute;
+    right:-50px;
+    top:-50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#cube i{
+    background-color: #fff;
+}

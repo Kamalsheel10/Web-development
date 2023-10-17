@@ -56,7 +56,6 @@ body {
 #left .place {
     width: 100%;
     color: #fff;
-    ;
     font-size: 18px;
     white-space: nowrap;
 }
@@ -70,6 +69,7 @@ body {
 
 #left .place:nth-child(2) h4 {
     font-size: 60px;
+    display: inline;
     opacity: 1;
     border-bottom: 1px solid white;
 
