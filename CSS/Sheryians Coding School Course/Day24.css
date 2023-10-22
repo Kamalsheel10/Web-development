@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#left {
+    height: 100%;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+#nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    position: relative;
+    z-index: 999;
+    color: #fff;
+    opacity: 0;
+    animation-name: mc;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: forwards;
+}
+
+#nav h1 {
+    font-family: ogg;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#nav i {
+    font-size: 15px;
+}
+
+#left img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 99;
+    opacity: 0;
+    animation-name: roti;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+#left>h1 {
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+    z-index: 99;
+    color: #fff;
+    font-size: 80px;
+    font-weight: 400;
+    text-align: right;
+    line-height: 78px;
+    opacity: 0;
+    animation-name: bc;
+    animation-duration: 1s;
+    animation-delay: 1.7s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: forwards;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(192, 72, 72, 0.99);
+    z-index: 9;
+    animation: move;
+    animation-duration: 1s;
+}
+
+#right {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+#img1 {
+    height: 200px;
+    width: 170px;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    animation-name: move;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+#img2 {
+    height: 290px;
+    width: 220px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+    animation-name: moveImg2;
+    animation-duration: 2.5s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-direction: forwards;
+}
+
+#img3 {
+    height: 200px;
+    width: 180px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    animation-name: move;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: infinite; */
+}
+
+#right>h2 {
+    font-size: 50px;
+    position: absolute;
+    right: -14%;
+    top: 25%;
+    rotate: -90deg;
+    animation-name: move;
+    animation-duration: 2s;
+    /* animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1); */
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveImg2 {
+    0% {
+        scale: 3;
+        transform: rotate(630deg) translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        scale: 1;
+        transform: rotate(0deg) translateY(0);
+        opacity: 1;
+        transform: translate(0, -50%);
+    }
+}
+
+@keyframes roti {
+    0% {
+        opacity: 0;
+        transform: rotate(30deg) scale(1.4);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+@keyframes bc {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes mc {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

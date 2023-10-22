@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 14px 30px;
+    background-color: royalblue;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: royalblue;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+button:hover::before {
+    transform: scale(2);
+    opacity: 0 ;
+}
+
+#box{
+    height:200px;
+    width:200px;
+    background-color: royalblue;
+    position:absolute;  
+    animation-name:move;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+
+}
+
+@keyframes move{
+    0%{
+        left:0;
+        top:0;
+    }
+    33%{
+        left:80%;
+        top:0%;
+    }
+    66%{
+        left:80%;
+        top:70%;
+    }
+    100%{
+        left:0%;
+        top:70%;
+    }
+}
