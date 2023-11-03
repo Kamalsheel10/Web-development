@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    border-top: 1px solid transparent;
+    height: 2000px;
+    background-color: rgb(218, 159, 159);
+}
+
+#child {
+    width: 100%;
+    height: 100vh;
+    background-color: royalblue;
+    margin-top: 100px;
+}
+
+/* learned about view height, and also to shift a child div thorugh margin without moving the parent div. 
+   IT's very simple, just give a border to the parent div so that css can know the difference between child and the parent div/
+*/

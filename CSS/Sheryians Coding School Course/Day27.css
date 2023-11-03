@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: #dadada;
+    display: flex;
+}
+
+#left {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+#left #text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#text h1 {
+    font-size: 8vw;
+}
+
+#text p {
+    font-size: 2vw;
+    opacity: .5;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#text a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 1vw;
+    opacity: .5;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+#right {
+    height: 100%;
+    width: 50%;
+    background-color: royalblue;
+}
+
+#rtop {
+    height: 50%;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+}
+
+#rleft {
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1557800636-894a64c1696f?auto=format&fit=crop&q=80&w=3165&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#rleft h1 {
+    font-size: 6vw;
+    line-height: 1;
+    color: #fff;
+    margin-left: 4vw;
+}
+
+#rright {
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1559181567-c3190ca9959b?auto=format&fit=crop&q=80&w=2244&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+
+#rbottom {
+    height: 50%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1517816428104-797678c7cf0c?auto=format&fit=crop&q=80&w=2940&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+
+@media(max-width:500px) {
+    #main {
+        flex-direction: column;
+    }
+
+    #left {
+        width: 100%;
+        text-align: center;
+    }
+
+    #text h1 {
+        font-size: 10vw;
+    }
+
+    #text p {
+        font-size: 4vw;
+    }
+
+    #text a {
+        font-size: 3vw;
+    }
+
+    #right {
+        width: 100%;
+    }
+
+    #rleft h1 {
+        font-size: 8vw;
+    }
+
+}

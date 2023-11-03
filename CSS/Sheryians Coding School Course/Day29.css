@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#nav {
+    width: 100%;
+    min-height: 10vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vw 4vw;
+}
+
+#nav #links {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 40px;
+}
+
+#links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#nav button {
+    padding: 9px 32px;
+    background-color: rgb(148, 229, 148);
+    border: none;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+#nav #rightnav{
+    display:flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap:30px;
+}
+#home {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+}
+
+#left {
+    width: 35%;
+    min-height: inherit;
+    position: relative;
+    padding: 5vw;
+}
+
+#left #text {
+    position: absolute;
+    right: -32%;
+    top: 10%;
+    width: 90%;
+}
+
+#text h1 {
+    font-size: 3.2vw;
+    line-height: 1;
+}
+
+#text p {
+    margin: 2vw 0;
+    width: 50%;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+#text button {
+    padding: 1vw 3.2vw;
+    background-color: #E0D4C8;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: .8vw;
+    color: #94693e;
+}
+
+#center {
+    width: 50%;
+    min-height: inherit;
+    background-image: url(https://plus.unsplash.com/premium_photo-1691854350650-326847f19729?auto=format&fit=crop&q=80&w=3175&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5vw;
+    width: 25%;
+    min-height: inherit;
+}
+
+.col {
+    margin-top: 20px;
+}
+
+.col h6 {
+    font-weight: 400;
+    opacity: .4;
+    margin-top: 4px;
+}
+
+#icons {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 4vw;
+}
+
+#right #circle {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vw;
+    width: 7vw;
+    border-radius: 50%;
+}
+
+@media(max-width:500px)
+{
+    #nav #links{
+        display:none;
+    }
+    #home{
+        flex-direction: column;
+    }
+    #home #left{
+        width:100%;
+    }
+    #home #left #text{
+        position: static;
+    }
+}
